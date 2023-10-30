@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "a21f0876-3b53-44e5-bef1-eba3f0cfa1bb",
+		"name": "Oda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getOda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/oda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"oda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveOda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"ad\": \"Single Room\",\n    \"tipi\": \"Standart\",\n    \"adet\": 24,\n    \"oda_tekli_yatak_sayisi\": 1,\n    \"oda_ciftli_yatak_sayisi\": null,\n    \"konum\": \"Standart\",\n    \"oran\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/oda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"oda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delOda",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/oda/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"oda",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

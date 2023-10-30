@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "4e300408-1516-41ad-9d8c-c2a28c566bc7",
+		"name": "HesapGrup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getHesapGrup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/hesapgrup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapgrup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveHesapGrup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4777,\n    \"ad\": \"assasa\",\n    \"hesapsinifId\": 9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/hesapgrup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapgrup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delHesapGrup",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/hesapgrup/4777",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapgrup",
+						"4777"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

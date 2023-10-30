@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "b43eae50-0b0e-45fe-a3ac-32e88d50c9bc",
+		"name": "HesapAltHesap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getAltHesap",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "saveAltHesap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\":\" değiş\",\n    \"hesapanahesapId\" : 916\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/hesapalthesap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapalthesap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delAltHesap",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

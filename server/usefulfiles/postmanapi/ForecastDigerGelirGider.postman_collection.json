@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9ebae9ff-cf73-4509-b061-444607e03403",
+		"name": "ForecastDigerGelirGider",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getForecastDigerGelirGider",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastdigergelirgider/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastdigergelirgider",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveForecastDigerGelirGider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"miktar\": 587,\n    \"satis_fiyat\": 25.45,\n    \"maliyet_fiyat\": null,\n    \"maliyethesapyontemId\": null,\n    \"fiyatlamayontemId\": null,\n    \"butceperiodId\": null,\n    \"digergelirgiderId\": null,\n    \"hesapaltkartId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastdigergelirgider",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastdigergelirgider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delForecastDigerGelirGider",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/forecastdigergelirgider/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastdigergelirgider",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

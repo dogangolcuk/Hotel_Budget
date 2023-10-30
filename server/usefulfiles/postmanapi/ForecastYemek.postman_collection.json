@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "a04f5fe2-f937-473b-a548-fa348edd14a8",
+		"name": "ForecastYemek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getForecastYemek",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastyemek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastyemek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveForecastemek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 5,\n    \"miktar\": 231421321,\n    \"satis_fiyat\": 65.47,\n    \"maliyet_fiyat\": null,\n    \"yemekId\": null,\n    \"maliyethesapyontemId\": null,\n    \"fiyatlamayontemId\": null,\n    \"butceperiodId\": null,\n    \"hesapaltkartId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastyemek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastyemek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delForecastYemek",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/forecastyemek/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastyemek",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

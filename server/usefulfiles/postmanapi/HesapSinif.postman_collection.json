@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "a5f5fd91-1b1f-4d5a-8ce9-076c11a622fa",
+		"name": "HesapSinif",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getHesapSinif",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/hesapsinif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapsinif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveHesapSinif",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 123,\n    \"ad\": \"silllllllllllll\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/hesapsinif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapsinif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delHesapSinif",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/hesapsinif/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"hesapsinif",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

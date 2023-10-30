@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "2d6702f1-8a2a-43fd-a3e1-4e27bdbf4ac4",
+		"name": "MaliyetHesapYontem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getMaliyetHesapYontem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/maliyethesapyontem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"maliyethesapyontem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveMaliyetHesapYontem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"ad\": \"hesap\",\n    \"aciklama\": null,\n    \"formul\": \"açıklama\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/maliyethesapyontem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"maliyethesapyontem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delMaliyetHesapYontem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/maliyethesapyontem/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"maliyethesapyontem",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

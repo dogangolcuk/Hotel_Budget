@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "22a58089-6b4f-4885-bb1c-5f9574febce4",
+		"name": "Malzeme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getMalzeme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/malzeme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"malzeme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveMalzeme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"miktar\": 587,\n    \"birim_fiyat\": 12,\n    \"birimId\": 3,\n    \"malzemebaseId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/malzeme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"malzeme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delMalzeme",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/malzeme/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"malzeme",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

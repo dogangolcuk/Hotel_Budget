@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "7a0516bb-37a8-494d-9f05-4fdfa9263733",
+		"name": "Personel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getPersonel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/personel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savePersonel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\": \"dffdfsdfs\",\n    \"soyad\": \"knn\",\n    \"kimlik_id\": null,\n    \"gorev_unvan\": null,\n    \"statu\": null,\n    \"is_grubu\": null,\n    \"is_giris_tarihi\": null,\n    \"is_cikis_tarihi\": null,\n    \"departmanId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/personel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delPersonel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/personel/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"personel",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

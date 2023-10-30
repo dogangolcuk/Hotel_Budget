@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "38d394e9-f32b-4339-8dcf-d2320f3549bd",
+		"name": "GercekFis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getGercekFis",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/gercekfis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gercekfis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveGercekFis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\": \"yemek satış\",\n    \"no\": null,\n    \"gelirmi\": null,\n    \"aciklama\": null,\n    \"gerceklenen_borc\": null,\n    \"gerceklenen_alacak\": null,\n    \"doviz_kur\": null,\n    \"gerceklenen_doviz_borc\": null,\n    \"gerceklenen_doviz_alacak\": null,\n    \"olusturma_tarihi\": null,\n    \"guncelleme_tarihi\": null,\n    \"butcefisiId\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/gercekfis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gercekfis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delGercekFis",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/gercekfis/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gercekfis",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

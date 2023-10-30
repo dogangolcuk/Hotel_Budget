@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "080d95b0-5505-4fdd-a497-49f7f9a77fdc",
+		"name": "DovizCinsi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getDovizCinsi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/dovizcinsi/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"dovizcinsi",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveDovizCinsi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 5,\n    \"ad\": \"ssssSTERLIN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/dovizcinsi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"dovizcinsi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delDovizCinsi",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/dovizcinsi/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"dovizcinsi",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

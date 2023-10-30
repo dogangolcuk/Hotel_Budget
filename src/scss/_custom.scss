@@ -1,0 +1,50 @@
+// Here you can add other styles
+.divtable {
+  display: table;
+  border-spacing: 1px;
+  width: 100%;
+  div[color='red'] {
+    background: rgb(255, 125, 125);
+  }
+  div[color='yellow'] {
+    background: rgb(255, 255, 125);
+  }
+  div[color='green'] {
+    background: rgb(125, 255, 255);
+  }
+  .tablehead {
+    display: table-header-group;
+    .tr {
+      display: table-row;
+
+      .th,
+      .td {
+        display: table-cell;
+        border-bottom: 0.1rem solid lightgray;
+        font-weight: bold;
+        padding-top: 0.25rem;
+        padding-left: 0.25rem;
+        padding-top: 0.25rem;
+        padding-right: 0.25rem;
+      }
+    }
+  }
+  .tablebody {
+    display: table-row-group;
+    :hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    .tr {
+      display: table-row;
+      .th,
+      .td {
+        display: table-cell;
+        border-bottom: 0.1rem solid lightgray;
+        padding-top: 0.25rem;
+        padding-left: 0.25rem;
+        padding-top: 0.25rem;
+        padding-right: 0.25rem;
+      }
+    }
+  }
+}

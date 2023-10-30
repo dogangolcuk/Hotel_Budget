@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "c16f3c9c-3939-4cef-b826-d31e5493f565",
+		"name": "Yemek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getYemek",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/yemek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveYemek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\": \"çorba\",\n    \"aciklama\": null,\n    \"yemekgrupId\": null,\n    \"birimId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/yemek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delYemek",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/yemek/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemek",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

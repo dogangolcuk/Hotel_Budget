@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "f8e66f72-31cf-48c0-bfce-e48a63f668d1",
+		"name": "YemekMalzeme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getYemekMalzeme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/yemekmalzeme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemekmalzeme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveYemekMalzeme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"yemekId\": 1,\n    \"malzemeId\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/yemekmalzeme",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemekmalzeme"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delYemekMalzeme",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/yemekmalzeme/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"yemekmalzeme",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

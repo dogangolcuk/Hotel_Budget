@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "2335a47f-67b4-4df4-9fe0-73cc5aa630ae",
+		"name": "ForecastPersonel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getForecastPersonel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastpersonel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastpersonel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveForecastPersonel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"calisma_gun\": 3,\n    \"gunluk_maliyet\": 254,\n    \"toplam_maliyet\": null,\n    \"butceperiodId\": null,\n    \"personelId\": null,\n    \"hesapaltkartId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/forecastpersonel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastpersonel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delForecastPersonel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/forecastpersonel/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"forecastpersonel",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

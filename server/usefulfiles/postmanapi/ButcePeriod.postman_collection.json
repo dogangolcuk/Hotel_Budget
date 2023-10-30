@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "3778bd52-540b-4626-b2b5-3e3525e2e64d",
+		"name": "ButcePeriod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getButcePeriod",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/butceperiod/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butceperiod",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveButcePeriod",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\": \"update\",\n    \"baslama_tarihi\": null,\n    \"bitis_tarihi\": null,\n    \"oran\": 1,\n    \"butceId\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/butceperiod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butceperiod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delButcePeriod",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/butceperiod/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butceperiod",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

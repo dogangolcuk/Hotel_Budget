@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "e535c20d-aa94-4e43-85bc-a216ae9c3c1d",
+		"name": "Butce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23296418"
+	},
+	"item": [
+		{
+			"name": "getButce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/butce/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butce",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveButce",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"ad\": \"X Otel 2023 Bütçesi\",\n    \"yil\": \"2023\",\n    \"onay_durumu\": false,\n    \"tahmini_enflasyon\": 0.80\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/butce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butce"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delButce",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/butce/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"butce",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
